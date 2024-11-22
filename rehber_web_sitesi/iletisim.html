@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        nav {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        ul {
+            margin: 20px auto;
+            padding: 0;
+            max-width: 600px;
+            list-style: none;
+        }
+
+        ul li {
+            background-color: #eef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            width: 100%;
+        }
+
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <!--navigasyon-->
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkinda.html">Hakkımızda</a>
+        <a href="servisler.html">Servisler</a>
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+<!--iletişim-->
+<h2>Bizimle İletişime Geçin</h2>
+
+<ul>
+    <li>Adres: X Mahallesi, X Sokak, No:123</li>
+    <li>Telefon: 555 111111</li>
+    <li>E-posta: x@example.com</li>
+</ul>
+
+<!--form-->
+<form>
+    <label for="name">Adınız:</label><br>
+    <input type="text" name="name" id="name"><br><br>
+    <label for="email">E-mail:</label><br>
+    <input type="email" name="email" id="email"><br><br>
+    <label for="message">Mesajınız:</label><br>
+    <textarea name="message" id="message"></textarea><br><br>
+    <input type="submit" value="Gönder">
+</form>
+</body>
+</html>
